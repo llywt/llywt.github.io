@@ -4,7 +4,9 @@
 	text-decoration: none;
 }
 body {
-	background-color: #E9EDF7
+	height: 1200px;
+	background: url(../img/background.jpg) no-repeat;
+	background-size: 100% 100%;
 }
 header {
 	position: relative;
