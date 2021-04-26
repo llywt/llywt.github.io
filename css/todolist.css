@@ -5,8 +5,8 @@
 }
 body {
 	height: 1200px;
-	background: url(../img/background.jpg) no-repeat;
-	background-size: 100% 100%;
+	background: url(../img/background.jpg) no-repeat top center;
+	background-size: 65% 100%;
 }
 header {
 	position: relative;
