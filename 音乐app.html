@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../css/music.css">
+    <title>music</title>
+</head>
+<body>
+<div id="app">
+    <div class="top">
+        <div class="top_left"><span>云音乐</span>-/-<span>收藏</span></div>
+        <div class="top_right">
+            <input type="text" v-model="values" @keyup.enter="keyupEnter" placeholder="发现更多精彩">
+            <img src="../icon/search.png" class="icon" @click="keyupEnter">
+        </div>
+    </div>
+
+    <div class="cover" v-show="isShows">
+        <img src="../img/cover.jpg" alt="">
+    </div>
+    <div class="banner">
+        <div class="banner_left">
+            <ul>
+                <li v-for="(item,index) in searchList">
+                    <p @click="autoPlay(item.id,index,item)" :class="indexs==index? 'lisstyle':''">{{item.name}}</p>
+                    <img src="../icon/mv.png" class="icon" v-if="item.mvid!=0" @click="playMV(item.mvid)"></li>
+            </ul>
+        </div>
+        <div class="line" v-show="isShow"></div>
+        <div class="banner_center" v-show="isShow">
+            <img :src="imgcover" :class="[{rotate:isPlaying}]">
+        </div>
+        <div class="line" v-show="isShow"></div>
+        <div class="banner_right" v-show="isShow">
+            <h4>热门留言：</h4>
+            <ul>
+                <li v-for="(item,index) in commentsList">
+                    <img :src="item.user.avatarUrl" alt=""><span><h5>{{item.user.nickname}}</h5><p>{{item.content}}</p></span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="bot" v-show="isShow">
+        <div class="audio_play">
+            <img :src="imgcover" alt="">
+            <div id="songsname">{{songs}}</div>
+            <audio :src="musicSrc" autoplay="autoplay"
+            controls="controls" loop="loop"
+            @play="plays" @pause="stops"></audio>
+        </div>
+    </div>
+    <div class="mv" v-show="isMv">
+        <video :src="mvSrc" autoplay="autoplay" controls></video>
+        <div class="close" @click="close">×</div>
+    </div>
+</div>
+
+    <script src="../js/music.js"></script>
+</body>
+</html>
