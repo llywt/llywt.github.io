@@ -27,7 +27,8 @@
             <ul>
                 <li v-for="(item,index) in searchList">
                     <p @click="autoPlay(item.id,index,item)" :class="indexs==index? 'lisstyle':''">{{item.name}}</p>
-                    <img src="icon/mv.png" class="icon" v-if="item.mvid!=0" @click="playMV(item.mvid)"></li>
+                    <img src="icon/mv.png" class="icon" v-if="item.mvid!=0" @click="playMV(item.mvid)">
+                </li>
             </ul>
         </div>
         <div class="line" v-show="isShow"></div>
