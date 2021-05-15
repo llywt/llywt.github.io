@@ -15,7 +15,7 @@
         <div class="top_left"><span>云音乐</span>-/-<span>收藏</span></div>
         <div class="top_right">
             <input type="text" v-model="values" @keyup.enter="keyupEnter" placeholder="发现更多精彩">
-            <img src="../icon/search.png" class="icon" @click="keyupEnter">
+            <img src="icon/search.png" class="icon" @click="keyupEnter">
         </div>
     </div>
 
@@ -27,7 +27,7 @@
             <ul>
                 <li v-for="(item,index) in searchList">
                     <p @click="autoPlay(item.id,index,item)" :class="indexs==index? 'lisstyle':''">{{item.name}}</p>
-                    <img src="../icon/mv.png" class="icon" v-if="item.mvid!=0" @click="playMV(item.mvid)"></li>
+                    <img src="icon/mv.png" class="icon" v-if="item.mvid!=0" @click="playMV(item.mvid)"></li>
             </ul>
         </div>
         <div class="line" v-show="isShow"></div>
