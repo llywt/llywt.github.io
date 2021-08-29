@@ -22,6 +22,7 @@
   width: 100%;
   height: 800px;
   position: relative;
+  overflow:hidden;
 }
 .page img {
   position: absolute;
