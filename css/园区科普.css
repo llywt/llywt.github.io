@@ -1,0 +1,53 @@
+.banner-img img {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  height: 50px;
+  background-color: #bbd3ab;
+}
+.nav p:nth-child(1) {
+  line-height: 50px;
+}
+.nav p:nth-child(1) span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 600;
+  color: #04a304;
+}
+.nav p:nth-child(1) span:nth-child(2) {
+  font-size: 12px;
+  color: #04a304;
+}
+.nav p:nth-child(2) {
+  line-height: 50px;
+}
+.nav p:nth-child(2) span {
+  padding: 4px 3px;
+  color: #fff;
+  font-size: 10px;
+  background-color: #666;
+}
+.box {
+  width: 100%;
+  height: 260px;
+  background: url(../img/素材1/11.jpg);
+  background-size: 100% 100%;
+  padding-top: 30px;
+  font-size: 13px;
+}
+.box .box-big {
+  width: 90%;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: #fff;
+  background: rgba(83, 128, 118, 0.7);
+}
+.box .box-big img {
+  width: 80%;
+}

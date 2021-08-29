@@ -1,0 +1,114 @@
+.boxx {
+  position: relative;
+  background: url(../img/素材2/分区浏览背景图.png);
+}
+.boxx .boxss {
+  position: absolute;
+}
+.boxx .boxss1 {
+  top: 130px;
+  left: 40%;
+  z-index: 10;
+}
+.boxx .boxss1 h3 {
+  position: absolute;
+  top: 55px;
+  left: 30px;
+}
+.boxx .boxss2 {
+  top: 25px;
+  left: 3%;
+}
+.boxx .boxss2 img {
+  width: 240px;
+}
+.boxx .boxss2 p,
+.boxx .boxss2 h3,
+.boxx .boxss2 h4 {
+  position: absolute;
+}
+.boxx .boxss2 p {
+  top: 10px;
+  left: 5px;
+  color: #fff;
+}
+.boxx .boxss2 h3 {
+  top: 55px;
+  left: 85px;
+  color: #000;
+}
+.boxx .boxss2 h4 {
+  color: #fff;
+  top: 75px;
+  left: 25px;
+  font-size: 14px;
+}
+.boxx .boxss3 {
+  top: 200px;
+  left: 3%;
+}
+.boxx .boxss3 img {
+  width: 240px;
+}
+.boxx .boxss3 h3,
+.boxx .boxss3 h4 {
+  position: absolute;
+}
+.boxx .boxss3 h3 {
+  top: 55px;
+  left: 80px;
+  color: #383737;
+}
+.boxx .boxss3 h4 {
+  color: #ffffff;
+  top: 75px;
+  left: 30px;
+  font-size: 14px;
+}
+.boxx .boxss4 {
+  top: 25px;
+  right: 3%;
+}
+.boxx .boxss4 img {
+  width: 145px;
+}
+.boxx .boxss4 h3,
+.boxx .boxss4 h4 {
+  position: absolute;
+}
+.boxx .boxss4 h3 {
+  top: 55px;
+  left: 40px;
+  font-size: 14px;
+  color: #333232;
+}
+.boxx .boxss4 h4 {
+  color: #ffffff;
+  top: 75px;
+  left: 38px;
+  font-size: 10px;
+}
+.boxx .boxss5 {
+  top: 237px;
+  right: 3%;
+}
+.boxx .boxss5 img {
+  width: 145px;
+}
+.boxx .boxss5 h3,
+.boxx .boxss5 h4 {
+  position: absolute;
+  text-align: center;
+}
+.boxx .boxss5 h3 {
+  top: 30px;
+  left: 40px;
+  font-size: 14px;
+  color: #333232;
+}
+.boxx .boxss5 h4 {
+  color: #ffffff;
+  top: 75px;
+  left: 8px;
+  font-size: 10px;
+}

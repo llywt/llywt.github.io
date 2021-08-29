@@ -1,0 +1,16 @@
+.boxx {
+  background: url(../img/素材2/bg1.png);
+  background-size: 100% 100%;
+  font-size: 13px;
+  padding: 10px;
+}
+.boxx h3,
+.boxx h4 {
+  text-align: center;
+  margin: 15px 0;
+}
+.boxx img {
+  width: 47%;
+  margin-left: 7px;
+  margin-top: 15px;
+}

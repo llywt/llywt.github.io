@@ -1,0 +1,54 @@
+.boxMax {
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+.boxMax ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.boxMax ul li {
+  margin: 5px 25px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.boxMax ul li img {
+  width: 80px;
+}
+.content {
+  background-color: #fff;
+  padding: 0 10px;
+}
+.content .content1 {
+  margin-bottom: 25px;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .content1 img {
+  width: 150px;
+  margin-right: 10px;
+}
+body {
+  background-color: #daf0e6;
+}
+.banner-img {
+  position: relative;
+}
+.banner-img p {
+  font-size: 16px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  background: rgba(35, 112, 117, 0.8);
+}
+.banner-img p span {
+  font-size: 12px;
+}

@@ -1,0 +1,45 @@
+.boxMax {
+  position: relative;
+  width: 100%;
+  height: 310px;
+}
+.boxMax img {
+  position: absolute;
+}
+.boxMax img:nth-child(1) {
+  width: 100px;
+  top: 5px;
+  left: 5px;
+}
+.boxMax img:nth-child(2) {
+  width: 100px;
+  bottom: 5px;
+  right: 5px;
+}
+.boxMax img:nth-child(3) {
+  width: 100%;
+}
+.boxMax p {
+  font-weight: 600;
+}
+.boxMax .Pone {
+  position: absolute;
+  top: 40px;
+  left: 120px;
+  text-align: start;
+}
+.boxMax .Ptwo {
+  position: absolute;
+  top: 130px;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #347e74;
+}
+.boxMax .Pthree {
+  position: absolute;
+  bottom: 40px;
+  right: 120px;
+  text-align: end;
+}

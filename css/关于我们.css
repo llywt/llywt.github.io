@@ -1,0 +1,84 @@
+body {
+  background: url(../img/素材3/关于我们/枝条.png);
+  background-size: 100% 100%;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 214px;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+}
+.banner .banner-nav {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+}
+.banner .banner-nav ul {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .banner-nav ul li {
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 600;
+  background-color: #dde3c9;
+}
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.content .left {
+  margin-top: 20px;
+}
+.content .left img {
+  width: 100px;
+}
+.content .left .left1 {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.content .left .left1 p {
+  width: 150px;
+  text-align: center;
+}
+.content .left .left1 p span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 600;
+}
+.content .right {
+  height: 280px;
+  border-left: 1px solid #666;
+}
+.content .right span:nth-child(1) {
+  display: inline-block;
+  margin-top: 110px;
+  margin-right: 50px;
+  width: 75px;
+  height: 17px;
+  transform: rotate(90deg);
+}
+.content .right span:nth-child(2) {
+  position: absolute;
+  width: 12px;
+  top: 50px;
+  line-height: 35px;
+  right: 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+footer {
+  margin-top: 60px;
+}
