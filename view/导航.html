@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/导航.css">
+    <script src="../js/vue.js"></script>
+    <style>
+        a {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <div class="logo-left">
+            <img src="../img/LOGO.png" alt="">
+            <div class="logo-text">
+                <h1>成都市植物园</h1>
+                <p>CHENGDU BOTANCAL GARDEN</p>
+            </div>
+        </div>
+        <div class="logo-right">
+            <a href="../view/导航.html">
+                <p></p>
+                <p></p>
+                <p></p>
+            </a>
+        </div>
+    </div>
+
+    <div class="box" id="box">
+        <ul>
+            <a style="color: #000;" href="./首页.html">
+                <li><span>首页</span><span>...</span></li>
+            </a>
+            <li @click="isShow1=!isShow1"><span>关于我们</span><span>...</span></li>
+            <ul v-show="isShow1">
+                <a href="./关于我们/关于我们.html">
+                    <li>关于我们>></li>
+                </a>
+                <li class="meun"><span><a href="./关于我们/植物园简介.html">植物园简介</a></span><span><a
+                            href="./关于我们/联系我们.html">联系我们</a></span></li>
+            </ul>
+            <li @click="isShow2=!isShow2"><span>科普教育</span><span>...</span></li>
+            <ul v-show="isShow2">
+                <a href="./科普教育/园区科普.html">
+                    <li>科普教育>></li>
+                </a>
+                <li class="meun"><span><a href="./科普教育/园区科普.html">园区科普</a></span> <span><a
+                            href="./科普教育/植物科普.html">植物科普</a></span></li>
+            </ul>
+            <li @click="isShow3=!isShow3"><span>园林园艺</span><span>...</span></li>
+            <ul v-show="isShow3">
+                <a href="./主题花展/观花指南.html">
+                    <li>园林园艺>></li>
+                </a>
+                <li class="meun"><span><a href="./四季览园/四季览园.html">四季览园</a></span><span
+                        style="border-right: 7px solid rgb(32,116,119);"><a
+                            href="./园致景观/分区浏览.html">园致景观</a></span><span><a href="./主题花展/主题花展.html">主题花展</a></span></li>
+            </ul>
+            <li @click="isShow4=!isShow4"><span>游客服务</span><span>...</span></li>
+            <ul v-show="isShow4">
+                <a href="./游客服务/交通.html">
+                    <li>交通路线>></li>
+                </a>
+                <li class="meun"><span><a href="./游客服务/门票.html">门票信息</a></span><span
+                        style="border-right: 7px solid rgb(32,116,119);"><a
+                            href="./游客服务/时间.html">开放时间</a></span><span><a href="./游客服务/须知.html">入园须知</a></span>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <footer>
+        <p style="font-size: 14px;">联系我们/Cantanct Us</p>
+        <p>电话：028-83583439</p>
+        <div class="footers">
+            <div class="left">
+                <p>地址：成都市北郊天回镇</p>
+                <p>邮编：610083</p>
+            </div>
+            <div class="right">
+                <p>传真：025-83585552</p>
+                <p style="color: rgb(61, 21, 156);">蜀ICP备19013962</p>
+            </div>
+        </div>
+        <p>Copyright 2008-2016A11 Rights Reserved</p>
+        <p>备案号：蜀ICP备19013962号 技术支持：DGG</p>
+    </footer>
+</body>
+<script>
+    new Vue({
+        el: '#box',
+        data: {
+            isShow1: false,
+            isShow2: false,
+            isShow3: false,
+            isShow4: false
+        },
+        methods: {
+
+        }
+    })
+</script>
+
+</html>
